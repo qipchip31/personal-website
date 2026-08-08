@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#eeeeea"/>
+  <rect x="180" y="120" width="840" height="390" fill="#b6b6b0" stroke="#11110f" stroke-width="4"/>
+  <rect x="180" y="120" width="840" height="34" fill="#fcfcf9" stroke="#11110f" stroke-width="4"/>
+  <text x="220" y="144" fill="#11110f" font-family="monospace" font-size="18">about · work · research · writing · play</text>
+  <rect x="270" y="220" width="520" height="190" fill="#fcfcf9" stroke="#11110f" stroke-width="3"/>
+  <rect x="270" y="220" width="520" height="30" fill="#deded8" stroke="#11110f" stroke-width="3"/>
+  <text x="490" y="242" fill="#11110f" font-family="monospace" font-size="18">chirag</text>
+  <text x="320" y="315" fill="#11110f" font-family="monospace" font-size="42">chirag pradhan</text>
+  <text x="320" y="360" fill="#484844" font-family="monospace" font-size="22">software engineer · product builder</text>
+</svg>
