@@ -33,6 +33,10 @@ function pointsEqual(a: Point, b: Point): boolean {
   return a.x === b.x && a.y === b.y;
 }
 
+function wrapCoordinate(value: number): number {
+  return (value + boardSize) % boardSize;
+}
+
 function createFood(snake: Point[]): Point {
   const emptyCells: Point[] = [];
 
@@ -84,15 +88,13 @@ export function stepSnake(
     : state.direction;
   const head = state.snake[0];
   const delta = directionDeltas[direction];
-  const nextHead = { x: head.x + delta.x, y: head.y + delta.y };
-  const hitWall =
-    nextHead.x < 0 ||
-    nextHead.x >= boardSize ||
-    nextHead.y < 0 ||
-    nextHead.y >= boardSize;
+  const nextHead = {
+    x: wrapCoordinate(head.x + delta.x),
+    y: wrapCoordinate(head.y + delta.y),
+  };
   const hitSelf = state.snake.some((segment) => pointsEqual(segment, nextHead));
 
-  if (hitWall || hitSelf) {
+  if (hitSelf) {
     return {
       ...state,
       direction,
