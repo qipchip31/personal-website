@@ -1,20 +1,29 @@
 ---
 title: "hybrid cnn-lstm channel estimation for 5g massive mimo systems using sparse pilot reconstruction and time-varying 3gpp channels"
-description: "short placeholder summary."
+description: "a hybrid cnn-lstm estimator reconstructs 5g massive mimo channels from sparse pilots with lower error, lower pilot overhead, and real-time inference latency."
 slug: "hybrid-cnn-lstm-channel-estimation"
-date: "2026-01-01"
+date: "2026-08-21"
 tags:
   - "5g"
   - "mimo"
 published: true
-summary: "short placeholder summary."
+summary: "a hybrid cnn-lstm estimator reconstructs 5g massive mimo channels from sparse pilots with lower error, lower pilot overhead, and real-time inference latency."
 order: 1
 category: "paper"
 publication: "Journal of Intelligent Decision Making and Information Science"
 authors:
   - "chirag pradhan"
+  - "keshav s"
+  - "suma m n"
 status: "published"
 paperUrl: "https://jidmis.org/index.php/jidmis/article/view/1732"
+doi: "https://doi.org/10.59543/jidmis.v3.1732"
 ---
 
-short placeholder summary.
+This paper proposes a two-stage hybrid CNN-LSTM estimator for 5G massive MIMO-OFDM channel estimation from sparse pilot grids.
+
+Least-squares pilot estimates are expanded with two-dimensional bilinear interpolation, then refined by a time-distributed CNN and LSTM sequence model trained on time-varying 3GPP TR 38.901 channels with Doppler effects up to 120 km/h.
+
+On a 4x4 MIMO-OFDM setup with 624 subcarriers, the method reduces normalized mean-squared error by up to 88%, roughly halves bit-error rate at mid-range SNRs, and improves spectral efficiency versus conventional interpolation while using half the dense-pilot overhead.
+
+The results point to CNN-LSTM processing as a practical path for accurate, low-overhead, sub-millisecond channel estimation in latency-sensitive 5G deployments.
