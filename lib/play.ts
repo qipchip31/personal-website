@@ -1,4 +1,4 @@
-export type GameSlug = "minesweeper" | "snake" | "tic-tac-toe";
+export type GameSlug = "minesweeper" | "snake" | "tic-tac-toe" | "wordle";
 
 export type GameMetadata = {
   title: string;
@@ -8,6 +8,12 @@ export type GameMetadata = {
 };
 
 export const games = [
+  {
+    title: "wordle",
+    description: "guess the hidden word in six careful tries.",
+    href: "/play/wordle",
+    slug: "wordle",
+  },
   {
     title: "tic tac toe",
     description: "a quiet grid for two players or a small computer opponent.",
